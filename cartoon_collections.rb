@@ -13,7 +13,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   index = 0 
-  until array.include?(cheese_types[index]) do
+  until array.include?(cheese_types[index]) || index > cheese_types.length do
     index +=1 
   end
     return cheese_types[index]
